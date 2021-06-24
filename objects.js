@@ -1,12 +1,22 @@
 // ===  Opdracht 1 ===
 // Maak een object met daarin jouw voornaam (string), achternaam (string), leeftijd (getal) en geboortedatum (date object). De datum hoeft niet geformat te worden.
 // Log dit in de terminal.
+const aboutMe = {
+  name: "Christina",
+  lastName: "Guseva",
+  age: 31,
+  birthday: "2 juni 1990",
+}
 
+console.log( aboutMe );
 
 // ===  Opdracht 2 ===
 // Zorg ervoor dat de volgende string in de terminal wordt gelogd:
 // "Hoi! Ik ben <voornaam>, ik ben <leeftijd> jaar oud."
 
+const makingAString = "Hoi! ik ben " + aboutMe.name + ", ik ben " + aboutMe.age + " jaar oud.";
+
+console.log( makingAString );
 
 // === Opdracht 3: bekijk het volgende object ===
 
@@ -20,18 +30,28 @@ const product = {
 };
 
 // 3a. Log de naam van de serie in de terminal.
+console.log( product.series );
 
 // 3b. Overschrijf de oude waarde van de property color ("creme") naar "roze". Log het object in de terminal om te checken of het gelukt is.
 
+product.color = "roze";
+console.log( product.color );
+
 // 3c. Log de tweede materiaalsoort ("kunststof") in de terminal
+
+console.log( product.material[1])
 
 // 1d. Log de afmetingen (b-h-d) in de terminal
 
+console.log( product[ "b-h-d" ]);
 
 // === Opdracht 4 ===
 // Declareer een variabele met daarin een string die het product beschrijft. Gebruik hiervoor de properties productName en material uit het object.
 // ---- Verwachte uitkomst:
 // "De Smeg Waterkoker is gemaakt van roestvrijstaal en kunststof"
+
+const makingAString1 = "De smeg Waterkoker is gemaakt van " + product.material[0] + " en " + product.material[1];
+console.log( makingAString1 );
 
 
 
